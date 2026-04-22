@@ -39,7 +39,7 @@ def mandar_reporte():
         msg += "Ya le has ganado, campeón 💪🏽😊🪄"    
     bot.send_message(CHAT_ID, msg, parse_mode='Markdown')
 
-bot.send_message(CHAT_ID, "Bot encendido, Fer 🔥. Te aviso cada día a las 20:00 hora España")
+#bot.send_message(CHAT_ID, "Bot encendido, Fer 🔥. Te aviso cada día a las 20:00 hora España")
 
 ultimo_envio = None
 while True:
