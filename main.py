@@ -2,7 +2,21 @@
 import requests, telebot, time
 from datetime import datetime, timedelta
 import pytz
+from flask import Flask
+from threading import Thread
 
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot vivo 💪🏽😊🪄🔥"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 TOKEN = "8601022037:AAGSAklgevPh0_y44ETbgfQTcqP7B-aGwXo"
 CHAT_ID = "6358542941" 
 TAG_Ferchu = "G9RGC9QG"      
