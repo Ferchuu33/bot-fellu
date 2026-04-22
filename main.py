@@ -56,6 +56,7 @@ def mandar_reporte():
 #bot.send_message(CHAT_ID, "Bot encendido, Fer 🔥. Te aviso cada día a las 20:00 hora España")
 
 ultimo_envio = None
+keep_alive()
 while True:
     ahora_españa = datetime.now(zona_españa)
     if ahora_españa.hour == 20 and ahora_españa.minute == 0:
